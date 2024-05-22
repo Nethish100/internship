@@ -1,0 +1,28 @@
+#include<stdio.h> 
+voidcaesar(chartext[], intshift){ 
+for(int i=0;text[i]!='\0';++i){ 
+
+ 
+if(text[i]>='a'&&text[i]<='z') 
+text[i]='a'+(text[i]- 'a'+shift)%26; 
+elseif(text[i]>='A'&&text[i]<='Z') 
+text[i]='A'+(text[i]- 'A'+shift)%26; 
+} 
+} 
+ 
+intmain(){ 
+charmessage[]="hellohowareu"; 
+intkey=3; 
+ 
+printf("Originalmessage:%s\n",message); 
+ 
+//Encryption 
+caesar(message,key); 
+printf("Encryptedmessage:%s\n",message); 
+ 
+//Decryption 
+caesar(message,-key); 
+printf("Decryptedmessage:%s\n",message); 
+ 
+return0; 
+} 
