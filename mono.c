@@ -14,6 +14,7 @@ void encrypt(char plaintext[], char key[], char ciphertext[]) {
         }
     }
     ciphertext[i] = '\0'; // Add null terminator
+    
     printf("Ciphertext: %s\n", ciphertext);
 }
 
