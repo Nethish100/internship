@@ -1,17 +1,17 @@
 #include<stdio.h> 
-voidcaesar(chartext[], intshift){ 
+void caesar(char text[], int shift){ 
 for(int i=0;text[i]!='\0';++i){ 
 
  
 if(text[i]>='a'&&text[i]<='z') 
 text[i]='a'+(text[i]- 'a'+shift)%26; 
-elseif(text[i]>='A'&&text[i]<='Z') 
+else if(text[i]>='A'&&text[i]<='Z') 
 text[i]='A'+(text[i]- 'A'+shift)%26; 
 } 
 } 
  
-intmain(){ 
-charmessage[]="hellohowareu"; 
+int main(){ 
+char message[]="hellohowareu"; 
 intkey=3; 
  
 printf("Originalmessage:%s\n",message); 
